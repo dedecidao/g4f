@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 01 G4F</title>
+</head>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 
+        'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .numero {
+        margin-bottom: 5px;
+    }
+</style>
+
+<body>
+    <h1>Números e Múltiplos</h1>
+    <h2 style="display: inline-block;">Candidato: André Luís Araujo</h2>
+    <img src="https://img.shields.io/badge/Status-Em%20Andamento-yellow" alt="Status do Projeto" style=position:relative;>
+    //github
+    
+    <div id="resultado"></div>
+</body>
+<script>
+    function executaProcess() {
+        let resultadoDiv = document.getElementById("resultado");
+
+
+
+
+        for (let contA = 1; contA <= 100; contA++) {
+            let multiplos = [];
+            for (let contB = 1; contB <= contA; contB++) {
+                if (contA % contB === 0) {
+                    multiplos.push(contB);
+                }
+            }
+            let numeroDiv = document.createElement("div");
+            numeroDiv.className = "numero";
+            numeroDiv.style.textAlign = "justify";
+            numeroDiv.style.marginLeft = "45%";
+            numeroDiv.style.color = (multiplos.length === 2 ? "red" : "black");
+            numeroDiv.style.fontWeight = (multiplos.length === 2 ? "bold" : "normal");
+            //justify
+            
+
+            numeroDiv.textContent = `${contA} [${(multiplos.length === 2 ? "PRIMO" : multiplos.join(", "))}]`;
+            resultadoDiv.appendChild(numeroDiv);
+        }
+    }
+
+    executaProcess();
+</script>
+
+</html>
