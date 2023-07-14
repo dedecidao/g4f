@@ -4,9 +4,10 @@ Versão do PHP 7.4
 
 O arquivo config aponta para instancia de banco na porta 3306
 
-nome: g4f
+Nome do banco: g4f
 
-caso seja necessario na pasta dumpBANCO pode ser usada pra restaurar os arquivos.
+caso seja necessario na pasta dumpBANCO foi feito um export dos dados e
+pode ser usada pra restaurar os arquivos.
 
 #### INSTRUÇÕES ####
 
