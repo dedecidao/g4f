@@ -1,3 +1,5 @@
+<img style="" src="https://raw.githubusercontent.com/dedecidao/g4f/main/teste03/imgs/video.gif" />
+
 Sobre Teste 3
 
 Versão do PHP 7.4
@@ -23,4 +25,9 @@ php -S localhost:8000 -t public
 
 Sendo necessario fazer a parametrização do -t para pasta public.
 
+
+
+<img style="" src="https://raw.githubusercontent.com/dedecidao/g4f/main/teste03/imgs/01.jpg" />
+
+<img style="" src="https://raw.githubusercontent.com/dedecidao/g4f/main/teste03/imgs/02.jpg" />
 
