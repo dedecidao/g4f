@@ -1,0 +1,43 @@
+<?php echo "teste"; ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+    <div class="container">
+    <div class="tv-program">
+      <h2>Próximo programa de TV </h2>
+      <p>Nome do programa: <strong id='proxprograma'></strong></p>
+      <p>Horário de exibição: <strong id='proxhorario'></strong></p>
+      <p>Gênero: <strong id='proxgenero'></strong></p>
+      <p>Dia da semana: <strong id='proxdia'></strong></p>
+    </div>
+
+    <div class="form-container">
+      <h2>Selecionar série</h2>
+      <form id="formBuscaHorarioSerie">
+        <select id='buscaSerie' name='buscaSerie'>
+          <option value="">Selecione uma série</option>
+        {% for serie in series %}
+            <option value="{{ serie.id }}">{{ serie.titulo }}</option>
+        {% endfor %}
+        </select>
+        <p>Nome da Serie: <span id="result-nome"></span></p>
+        <p>Gênero: <span id="result-genero"></span></p>
+        <p>Canal: <span id="result-canal"></span></p>
+        <p>Horário de exibição da série: <span id="result-horario"></span></p>
+        <button type="submit" id='buscaSerie'>Enviar</button>
+      </form>
+    </div>
+  </div>
+        
+        <script src="../../js/script.js"></script>
+
+    </body>
+</html>
